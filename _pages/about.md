@@ -17,6 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 I am a Ph.D. student in the [Institute of Artificial Intelligence](https://iai.buaa.edu.cn/), [Beihang(BUAA) University](https://www.buaa.edu.cn/) <img src='./images/buaa.png' style='width: 2em;'>, advised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and co-mentored by Prof. [Hang Su](https://www.suhangss.me/) and Dr. [Yinpeng Dong](https://ml.cs.tsinghua.edu.cn/~yinpeng/). Before that, I received my B.E. degree in Intelligent Science & Technology from [School of Artificial Intelligence](https://sai.xidian.edu.cn/), [Xidian(XDU) University](https://www.xidian.edu.cn/) <img src='./images/xdu.png' style='width: 2em;'>.
+I was a research summer intern in 2021 at Digital Team, [Dell Technologies(China) Co](https://www.dell.com/zh-cn) <img src='./images/dell.png' style='width: 2em;'>.  
+I'm a AI beginner with interest includes adversarial robustness and natural robustness for deep learning. 
 
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 
