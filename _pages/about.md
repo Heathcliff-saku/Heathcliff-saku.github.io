@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-I am a Ph.D. student in the [Institute of Artificial Intelligence](https://iai.buaa.edu.cn/), [Beihang(BUAA) University](https://www.buaa.edu.cn/), advised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and co-mentored by Prof. [Hang Su](https://www.suhangss.me/) and Dr. [Yinpeng Dong](https://ml.cs.tsinghua.edu.cn/~yinpeng/). 
+I am a Ph.D. student in the [Institute of Artificial Intelligence](https://iai.buaa.edu.cn/), [Beihang(BUAA) University](https://www.buaa.edu.cn/) <img src='./images/buaa.jpg' style='width: 6em;'>, advised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and co-mentored by Prof. [Hang Su](https://www.suhangss.me/) and Dr. [Yinpeng Dong](https://ml.cs.tsinghua.edu.cn/~yinpeng/). Before that, I received my B.E. degrees from [School of Artificial Intelligence](https://sai.xidian.edu.cn/), [Xidian(XDU) University](https://www.xidian.edu.cn/) <img src='./images/xdu.jpg' style='width: 6em;'>.
 
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 
