@@ -28,7 +28,7 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/viat.png' alt="sym" width="90%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2023, Accepted</div><img src='images/viat.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Towards Viewpoint-Invariant Visual Recognition via Adversarial Training](https://arxiv.org/pdf/2307.10235.pdf)
