@@ -17,7 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 I am a Ph.D. student in the [Institute of Artificial Intelligence](https://iai.buaa.edu.cn/), [Beihang(BUAA) University](https://www.buaa.edu.cn/) <img src='./images/buaa.png' style='width: 2em;'>, advised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and co-mentored by Prof. [Hang Su](https://www.suhangss.me/) and Dr. [Yinpeng Dong](https://ml.cs.tsinghua.edu.cn/~yinpeng/). Before that, I received my B.E. degree in Intelligent Science & Technology from [School of Artificial Intelligence](https://sai.xidian.edu.cn/), [Xidian(XDU) University](https://www.xidian.edu.cn/) <img src='./images/xdu.png' style='width: 2em;'>.
-I received the national scholarship in 2021 at Xidian University. I was a research summer intern in 2021 at Digital Team, [Dell Technologies(China) Co](https://www.dell.com/zh-cn) <img src='./images/dell.png' style='width: 6em;'>, mentored by SSE. Xuejin Liang. I was a research intern in 2022 at [RealAI](https://www.realai.eu/) <img src='./images/realai.png' style='width: 2em;'>, mentored by Dr. Yinpeng Dong.
+
+I received the national scholarship in 2021 at Xidian University. I was a research summer intern in 2021 at Digital Team, [Dell Technologies(China) Co](https://www.dell.com/zh-cn) <img src='./images/dell.png' style='width: 6em;'>, mentored by SSE. Xuejin Liang. I was a research intern in 2022 at [RealAI](https://www.realai.eu/) <img src='./images/realai.png' style='width: 4em;'>, mentored by Dr. Yinpeng Dong.
 
 I'm a AI beginner with interest includes adversarial robustness and natural robustness for deep learning. 
 
