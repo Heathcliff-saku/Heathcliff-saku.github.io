@@ -37,7 +37,7 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS2022, Accepted</div><img src='images/viewfool.jpg' alt="sym" width="90%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS2022, Accepted</div><img src='images/viewfool.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ViewFool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints](https://arxiv.org/pdf/2210.03895.pdf)
