@@ -20,8 +20,7 @@ I am a Ph.D. student in the [Institute of Artificial Intelligence](https://iai.b
 
 I received the national scholarship in 2021 at Xidian University. I was a research summer intern in 2021 at Digital Team, [Dell Technologies(China) Co](https://www.dell.com/zh-cn) <img src='./images/dell.png' style='width: 6em;'>, mentored by SSE. Xuejin Liang. I was a research intern in 2022 at [RealAI](https://www.realai.eu/) <img src='./images/realai.png' style='width: 2em;'>, mentored by Dr. Yinpeng Dong.
 
-I'm a AI beginner with interest includes adversarial robustness and natural robustness for deep learning. 
-
+I'm a AI beginner with interest includes adversarial robustness and natural robustness for deep learning.
 
 # 🔥 News
 - *2022.02*: &nbsp;✨ A bit idle lately, so I've launched this personal website. thanks you to find here, my friends! ( haha 
