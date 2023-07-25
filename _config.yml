@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Shouwei Ruan"
+title                    : "Shouwei Ruan (阮受炜)"
 description              : "Ph.D. Student in Institute of Artificial Intelligence, Beihang University. Focusing on Computer Vision & Adversarial Robustness."
 repository               : "Heathcliff-saku/Heathcliff-saku.github.io"
 google_scholar_stats_use_cdn : true
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "https://github.com/Heathcliff-saku"
   google_plus      :
   keybase          :
   instagram        :
