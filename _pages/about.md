@@ -30,13 +30,13 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2023, Accepted</div><img src='images/viat.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Towards Viewpoint-Invariant Visual Recognition via Adversarial Training**
+**Towards Viewpoint-Invariant Visual Recognition via Adversarial Training**\\
+**Shouwei Ruan**, Yinpeng Dong, Hang Su, Jianteng Peng, Ning Chen, Xingxing Wei\\
+💾[**Project**](https://arxiv.org/pdf/2307.10235.pdf) 📃[**Paper**](https://arxiv.org/pdf/2307.10235.pdf)
+-
+-
+-
 
-**Shouwei Ruan**, Yinpeng Dong, Hang Su, Jianteng Peng, Ning Chen, Xingxing Wei
-
-[**Code**](https://arxiv.org/pdf/2307.10235.pdf) | [**Paper**](https://arxiv.org/pdf/2307.10235.pdf)
-
-**Abstract**:
 
 </div>
 </div>
@@ -44,13 +44,12 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS2022, Accepted</div><img src='images/viewfool.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**ViewFool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints**
-
-Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu
-
-[**Code**](https://github.com/Heathcliff-saku/ViewFool_) | [**Paper**](https://arxiv.org/pdf/2210.03895.pdf)
-
-**Abstract**:
+**ViewFool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints**\\
+Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu\\
+💾[**Project**](https://github.com/Heathcliff-saku/ViewFool_) 📃[**Paper**](https://arxiv.org/pdf/2210.03895.pdf)\\
+-
+-
+-
 </div>
 </div>
 
