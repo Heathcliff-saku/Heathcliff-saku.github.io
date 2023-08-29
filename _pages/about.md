@@ -33,7 +33,9 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 **Towards Viewpoint-Invariant Visual Recognition via Adversarial Training**
 
 **Shouwei Ruan**, Yinpeng Dong, Hang Su, Jianteng Peng, Ning Chen, Xingxing Wei
+
 [**Code**](https://arxiv.org/pdf/2307.10235.pdf) | [**Paper**](https://arxiv.org/pdf/2307.10235.pdf)
+
 **Abstract**:
 
 </div>
@@ -45,7 +47,9 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 **ViewFool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints**
 
 Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu
+
 [**Code**](https://github.com/Heathcliff-saku/ViewFool_) | [**Paper**](https://arxiv.org/pdf/2210.03895.pdf)
+
 **Abstract**:
 </div>
 </div>
