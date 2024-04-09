@@ -73,7 +73,7 @@ Xingxing Wei, **Shouwei Ruan**, Yinpeng Dong, and Hang Su\\
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2023, Under Review</div><img src='images/viat.png' alt="sym" width="90%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2024, Under Review</div><img src='images/diffender.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 **DIFFender: Diffusion-Based Adversarial Defense against Patch Attacks in the Physical World**\\
 Caixin Kang, Yinpeng Dong, Zhengyi Wang, **Shouwei Ruan**, Hang Su, Xingxing Wei\\
