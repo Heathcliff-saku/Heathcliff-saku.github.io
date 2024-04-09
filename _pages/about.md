@@ -27,14 +27,14 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 
 # 📝 Publications 
 
-** 🛩️ Chapter-1: Viewpoint Robustness and Invariance of Visual Systems**
+**🛩️ Chapter-1: Viewpoint Robustness and Invariance of Visual Systems**
 In the field of computer vision, viewpoint robustness and invariance present a longstanding challenge. This requires visual models to have the same response or representation to inputs from different viewpoints. To achieve this, we have made a series of efforts, including constructing the first adversarial viewpoint benchmark (ImageNet-V/ImageNet-V+), adversarial viewpoint optimization methods (ViewFool), and adversarial training framework that enhances viewpoint invariance (VIAT). The related work is showcased as follows:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal Version, Under Review</div><img src='images/viat_2.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 **Improving Viewpoint Robustness for Visual Recognition via Adversarial Training**\\
 **Shouwei Ruan**, Yinpeng Dong, Hang Su, Jianteng Peng, Ning Chen, Xingxing Wei\\
-💾[**Project**](https://arxiv.org/pdf/2307.10235.pdf) 📃[**Paper**](https://arxiv.org/pdf/2307.11528.pdf)\\
+💾[**Project**](https://arxiv.org/pdf/2307.10235.pdf) 📃[**Paper**](https://arxiv.org/pdf/2307.11528.pdf)
 </div>
 </div>
 
@@ -42,16 +42,15 @@ In the field of computer vision, viewpoint robustness and invariance present a l
 <div class='paper-box-text' markdown="1">
 **Towards Viewpoint-Invariant Visual Recognition via Adversarial Training**\\
 **Shouwei Ruan**, Yinpeng Dong, Hang Su, Jianteng Peng, Ning Chen, Xingxing Wei\\
-💾[**Project**](https://arxiv.org/pdf/2307.10235.pdf) 📃[**Paper**](https://arxiv.org/pdf/2307.10235.pdf)\\
+💾[**Project**](https://arxiv.org/pdf/2307.10235.pdf) 📃[**Paper**](https://arxiv.org/pdf/2307.10235.pdf)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS2022, Accepted</div><img src='images/viewfool.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 **ViewFool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints**\\
 Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu\\
-💾[**Project**](https://github.com/Heathcliff-saku/ViewFool_) 📃[**Paper**](https://arxiv.org/pdf/2210.03895.pdf)\\
+💾[**Project**](https://github.com/Heathcliff-saku/ViewFool_) 📃[**Paper**](https://arxiv.org/pdf/2210.03895.pdf)
 </div>
 </div>
 
