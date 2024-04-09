@@ -27,7 +27,7 @@ I'm a AI beginner with interest includes adversarial robustness and natural robu
 
 # 📝 Publications 
 
-**🛩️ Chapter-1: Viewpoint Robustness and Invariance of Visual Systems**
+**🛩️ Chapter-1: Viewpoint Robustness and Invariance of Visual Systems**\\
 In the field of computer vision, viewpoint robustness and invariance present a longstanding challenge. This requires visual models to have the same response or representation to inputs from different viewpoints. To achieve this, we have made a series of efforts, including constructing the first adversarial viewpoint benchmark (ImageNet-V/ImageNet-V+), adversarial viewpoint optimization methods (ViewFool), and adversarial training framework that enhances viewpoint invariance (VIAT). The related work is showcased as follows:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal Version, Under Review</div><img src='images/viat_2.png' alt="sym" width="90%"></div></div>
@@ -54,6 +54,32 @@ Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu\\
 </div>
 </div>
 
+**🛩️ Chapter-2: Adversarial Robustness: Attack and Defense**\\
+In the field, We primarily focuses on attack and defense methods against adversarial patches, as well as on the generation of 3D adversarial textures.
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2024, Accepted</div><img src='images/tt3d.png' alt="sym" width="90%"></div></div>
+<div class='paper-box-text' markdown="1">
+**Towards Transferable Targeted 3D Adversarial Attack in the Physical World**\\
+Yao Huang, Yinpeng Dong, **Shouwei Ruan**, Xiao Yang, Hang Su, Xingxing Wei\\
+📃[**Paper**](https://arxiv.org/pdf/2312.09558.pdf)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal Version, Under Review</div><img src='images/dopatch.png' alt="sym" width="90%"></div></div>
+<div class='paper-box-text' markdown="1">
+**Distributional Modeling for Location-Aware Adversarial Patches**\\
+Xingxing Wei, **Shouwei Ruan**, Yinpeng Dong, and Hang Su\\
+💾[**Project**](https://github.com/heathcliff-saku/dopatch) 📃[**Paper**](https://arxiv.org/pdf/2306.16131.pdf)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2023, Under Review</div><img src='images/viat.png' alt="sym" width="90%"></div></div>
+<div class='paper-box-text' markdown="1">
+**DIFFender: Diffusion-Based Adversarial Defense against Patch Attacks in the Physical World**\\
+Caixin Kang, Yinpeng Dong, Zhengyi Wang, **Shouwei Ruan**, Hang Su, Xingxing Wei\\
+📃[**Paper**](https://arxiv.org/html/2306.09124v3)
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
