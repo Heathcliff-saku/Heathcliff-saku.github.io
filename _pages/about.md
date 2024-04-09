@@ -55,7 +55,7 @@ Yinpeng Dong, **Shouwei Ruan**, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu\\
 </div>
 
 **🛩️ Chapter-2: Adversarial Robustness: Attack and Defense**\\
-In the field, We primarily focuses on attack and defense methods against adversarial patches, as well as on the generation of 3D adversarial textures.
+We primarily focuses on attack and defense methods against adversarial patches, as well as on the generation of 3D adversarial textures.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2024, Accepted</div><img src='images/tt3d.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
