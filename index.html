@@ -171,6 +171,21 @@ h2 .sub{font-size:13px;font-weight:500;color:var(--muted);margin-left:auto}
 @media(max-width:820px){.awards{grid-template-columns:1fr}}
 .gallery{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory}
 .gallery img{height:180px;width:auto;border-radius:14px;scroll-snap-align:start;box-shadow:0 8px 24px rgba(78,88,150,.15);border:2px solid rgba(255,255,255,.9)}
+
+/* ---------- visitors ---------- */
+.visitors{display:grid;grid-template-columns:1fr 280px;gap:14px}
+.vmap{padding:14px;overflow:hidden}
+.vmap .maphead{display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--muted);margin-bottom:8px}
+.vmap .mapbox{border-radius:14px;overflow:hidden;background:linear-gradient(135deg,rgba(93,108,255,.06),rgba(139,92,246,.08));border:1px solid var(--line);min-height:240px;display:flex;align-items:center;justify-content:center;position:relative}
+.vmap .mapbox #clustrmaps-widget,.vmap .mapbox canvas,.vmap .mapbox svg{max-width:100%}
+.vmap .mapbox .clustrmaps-map{background:transparent!important}
+.vmap .fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:12.5px;color:var(--muted);text-align:center;padding:16px}
+.vmap .fallback svg{width:100%;max-width:520px;opacity:.9}
+.vstats{display:flex;flex-direction:column;gap:14px}
+.vstat{padding:18px 20px;display:flex;flex-direction:column;justify-content:center;flex:1}
+.vstat .n{font-size:30px;font-weight:800;letter-spacing:-.03em;background:linear-gradient(90deg,var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;line-height:1.1}
+.vstat .l{font-size:12.5px;color:var(--muted);font-weight:500;margin-top:4px}
+@media(max-width:820px){.visitors{grid-template-columns:1fr}.vstats{flex-direction:row}}
 footer{margin-top:60px;text-align:center;font-size:12.5px;color:var(--muted)}
 footer .card{display:inline-block;padding:12px 22px}
 </style>
@@ -706,6 +721,45 @@ footer .card{display:inline-block;padding:12px 22px}
     <div class="scroll-hint">⬅ ➡ scrollable</div>
   </div>
 </section>
+
+<!-- ================= VISITORS ================= -->
+<section id="visitors">
+  <h2><span class="idx">10</span>Visitors <span class="sub">since Aug. 2026</span></h2>
+  <div class="visitors">
+    <div class="card vmap">
+      <div class="maphead"><span>🌍 Where visitors come from</span><span>powered by ClustrMaps</span></div>
+      <div class="mapbox" id="visitor-map">
+        <!-- ClustrMaps: 注册 https://clustrmaps.com 获取 ID 后，把下方 d=YOUR_CLUSTRMAPS_ID 替换为你的 ID 即可 -->
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_CLUSTRMAPS_ID&cl=ffffff&w=a&t=n&co=f7f8fc&cmo=5b6cff&cmn=8b5cf6&ct=6b7280"></script>
+        <div class="fallback" id="map-fallback" style="display:none">
+          <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="mg" x1="0" x2="1"><stop offset="0" stop-color="#4d6bfe"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient><pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.6" fill="url(#mg)" opacity=".55"/></pattern></defs>
+            <g fill="url(#dots)">
+              <path d="M60 110 l90 -40 l120 10 l40 40 l-30 60 l-60 30 l-40 60 l-30 -40 l-70 -40 z"/>
+              <path d="M230 260 l60 -10 l40 50 l-20 60 l-40 20 l-30 -50 z"/>
+              <path d="M370 100 l70 -30 l40 30 l-10 60 l-50 30 l-60 -20 z"/>
+              <path d="M390 200 l70 0 l30 60 l-20 70 l-60 10 l-40 -60 z"/>
+              <path d="M470 80 l180 -20 l90 40 l-20 80 l-120 40 l-80 -30 l-60 -60 z"/>
+              <path d="M600 270 l70 -10 l30 40 l-40 40 l-60 -20 z"/>
+            </g>
+            <circle cx="620" cy="150" r="7" fill="#5b6cff"><animate attributeName="r" values="5;10;5" dur="2.4s" repeatCount="indefinite"/></circle>
+            <circle cx="620" cy="150" r="14" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity=".6"><animate attributeName="r" values="8;26" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.4s" repeatCount="indefinite"/></circle>
+          </svg>
+          <span>Visitor map will appear here once ClustrMaps is configured.</span>
+        </div>
+      </div>
+    </div>
+    <div class="vstats">
+      <div class="card vstat"><div class="n"><span id="busuanzi_value_site_uv">–</span></div><div class="l">👤 Unique visitors</div></div>
+      <div class="card vstat"><div class="n"><span id="busuanzi_value_site_pv">–</span></div><div class="l">👁 Total page views</div></div>
+    </div>
+  </div>
+</section>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+// If ClustrMaps didn't render (placeholder ID / blocked), show the styled fallback map.
+setTimeout(function(){var b=document.getElementById('visitor-map');if(!b.querySelector('canvas, #clustrmaps-widget, .clustrmaps-map, img')){document.getElementById('map-fallback').style.display='flex';}},4000);
+</script>
 
 <footer>
   <div class="card">Last updated: Aug. 2026 · © Shouwei Ruan · Layout originally derived from <a href="https://tianxingchen.github.io/" target="_blank">Tianxing Chen</a>, redesigned 2026.</div>
