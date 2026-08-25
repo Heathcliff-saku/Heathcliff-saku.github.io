@@ -1,0 +1,27 @@
+name: Get Google Scholar Citation Data
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install scholarly
+      - name: Run crawler
+        env:
+          GOOGLE_SCHOLAR_ID: 1pggtuUAAAAJ
+        run: python google_scholar_crawler/main.py
+      - name: Publish to google-scholar-stats branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: google-scholar-stats
+          publish_dir: ./results
+          commit_message: "Update Google Scholar stats"

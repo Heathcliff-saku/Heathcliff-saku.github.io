@@ -59,7 +59,10 @@ h2 .sub{font-size:13px;font-weight:500;color:var(--muted);margin-left:auto}
 .card>*{position:relative}
 
 /* ---------- hero ---------- */
-.hero{display:grid;grid-template-columns:1.5fr .9fr;gap:28px;align-items:center;padding:34px 36px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;align-items:center;padding:34px 36px}
+.namerow{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.namerow h1{margin:0}
+.sign{height:54px;width:auto;mix-blend-mode:multiply;opacity:.92;margin-bottom:6px}
 .hero h1{font-size:44px;line-height:1.1;letter-spacing:-.03em;margin:0 0 6px;font-weight:800}
 .hero h1 span{background:linear-gradient(90deg,var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .role{font-size:17px;color:var(--ink-2);font-weight:500;margin:0}
@@ -73,11 +76,13 @@ h2 .sub{font-size:13px;font-weight:500;color:var(--muted);margin-left:auto}
 .logos{display:flex;gap:16px;align-items:center;margin-top:20px;opacity:.9}
 .logos img{height:44px;width:auto}
 .portrait{justify-self:end;position:relative}
-.portrait img{width:250px;height:250px;object-fit:cover;border-radius:28px;border:4px solid rgba(255,255,255,.9);box-shadow:0 20px 50px rgba(78,88,150,.25)}
+.portrait img{width:100%;max-width:360px;aspect-ratio:3/4;object-fit:cover;border-radius:28px;border:4px solid rgba(255,255,255,.9);box-shadow:0 20px 50px rgba(78,88,150,.25)}
+.portrait .cap{font-size:11.5px;color:var(--muted);margin-top:8px;text-align:right;max-width:360px}
 .portrait::after{content:"";position:absolute;inset:-14px;border-radius:40px;background:linear-gradient(135deg,rgba(93,108,255,.35),rgba(168,85,247,.35));filter:blur(24px);z-index:-1}
 .badges{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
 .badges img{height:20px}
-@media(max-width:820px){.hero{grid-template-columns:1fr}.portrait{justify-self:start}.hero h1{font-size:34px}}
+.badges a:hover{opacity:.85}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.portrait{justify-self:start}.portrait .cap{text-align:left}.hero h1{font-size:34px}}
 
 /* ---------- bio / news ---------- */
 .bio p{margin:0 0 12px;font-size:15.5px;color:var(--ink-2)}
@@ -128,6 +133,7 @@ h2 .sub{font-size:13px;font-weight:500;color:var(--muted);margin-left:auto}
 .pub.first{border-color:rgba(139,92,246,.45);background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(237,233,254,.55))}
 .pub .thumb{width:200px;height:120px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#e0e7ff,#ede9fe);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(78,88,150,.12)}
 .pub .thumb img{width:100%;height:100%;object-fit:cover}
+.pub .thumb.cover img{object-fit:cover;object-position:top;background:#fff}
 .pub .thumb .ph{font-family:"JetBrains Mono",monospace;font-size:12px;color:#5b47c7;font-weight:600;letter-spacing:.06em;text-align:center;padding:10px}
 .pub .t{font-size:15.5px;font-weight:700;color:var(--ink);line-height:1.35;margin:0}
 .pub .t a{color:inherit}
@@ -192,11 +198,11 @@ footer .card{display:inline-block;padding:12px 22px}
 <!-- ================= HERO ================= -->
 <div class="card hero">
   <div>
-    <h1><span>Shouwei Ruan</span> <span style="color:var(--ink);-webkit-text-fill-color:var(--ink);font-weight:700;font-size:.72em">阮受炜</span></h1>
+    <div class="namerow"><h1><span>Shouwei Ruan</span></h1><img class="sign" src="./files/sign.jpg" alt="阮受炜"></div>
     <p class="role">Ph.D. Candidate @ Institute of AI, Beihang University (BUAA)</p>
     <p class="role" style="font-size:15px;color:var(--muted)">Visiting Ph.D. Student @ TSAIL, Tsinghua University</p>
     <div class="tags">
-      <span class="tag">Embodied AI</span><span class="tag">Spatial Intelligence</span><span class="tag v">Cognitive Maps &amp; Navigation</span><span class="tag v">Trustworthy VLMs / VLAs</span><span class="tag">3D &amp; Viewpoint Robustness</span>
+      <span class="tag">Spatial Intelligence</span><span class="tag v">Embodied AI &amp; World Models</span><span class="tag">Trustworthy VLMs</span>
     </div>
     <div class="links">
       <a href="mailto:shouweiruan@gmail.com"><img src="./files/icon/email.png" alt="">Email</a>
@@ -205,29 +211,29 @@ footer .card{display:inline-block;padding:12px 22px}
       <a href="./files/wechat.jpeg" target="_blank"><img src="./files/icon/wechat.png" alt="">WeChat</a>
       <a href="https://www.zhihu.com/people/ruan-mou-ren-26" target="_blank"><img src="./files/icon/zhihu.png" alt="">Zhihu</a>
       <a href="https://www.xiaohongshu.com/user/profile/601961b40000000001002a7c" target="_blank"><img src="./files/icon/xiaohongshu.png" alt="">RedNote</a>
-      <a href="./files/阮受炜简历2024-07.pdf" target="_blank">📄 中文简历</a>
-    </div>
-    <div class="logos">
-      <img src="./files/institute/buaa-rose.png" alt="BUAA ROSE Lab">
-      <img src="./files/institute/thu-tsail.png" alt="THU TSAIL">
+      <a href="./files/阮受炜-简历-2026.07.pdf" target="_blank">📄 中文简历 (2026.07)</a>
     </div>
     <div class="badges">
-      <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fheathcliff-saku.github.io&count_bg=%235B6CFF&title_bg=%238B5CF6&icon=googlepodcasts.svg&icon_color=%23ffffff&title=Page+Viewers&edge_flat=false" alt=""></a>
-      <img alt="GitHub stars" src="https://img.shields.io/github/stars/Heathcliff-saku?color=5b6cff">
-      <img alt="GitHub followers" src="https://img.shields.io/github/followers/Heathcliff-saku?color=8b5cf6">
+      <a href="https://scholar.google.com/citations?user=1pggtuUAAAAJ&hl=zh-CN&oi=ao" target="_blank"><img alt="Google Scholar citations" src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FHeathcliff-saku%2FHeathcliff-saku.github.io%40google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=8b5cf6&style=flat&label=citations"></a>
+      <a href="https://github.com/Heathcliff-saku" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Heathcliff-saku?color=5b6cff&logo=github"></a>
+      <a href="https://github.com/Heathcliff-saku" target="_blank"><img alt="GitHub followers" src="https://img.shields.io/github/followers/Heathcliff-saku?color=5b6cff&logo=github"></a>
     </div>
   </div>
-  <div class="portrait"><img src="./files/avatar/shouwei_img.jpeg" alt="Shouwei Ruan"></div>
+  <div class="portrait">
+    <img src="./files/avatar/shouwei_2026.jpg" alt="Shouwei Ruan">
+    <div class="cap">On my 26th birthday · 📷 by Qiyang Zhang (my girl)</div>
+  </div>
 </div>
 
 <!-- ================= BIO ================= -->
 <section id="bio">
   <h2><span class="idx">01</span>Biography</h2>
   <div class="card bio">
-    <!-- BIO_START: 个人介绍（待用户提供后替换此块） -->
-    <p>Hi! I am <strong>Shouwei Ruan (阮受炜)</strong>, a final-year Ph.D. candidate at the Institute of Artificial Intelligence, Beihang University (BUAA), and a member of the <a href="https://rose-vision.github.io/" target="_blank">ROSE Vision Lab</a> advised by <a href="https://sites.google.com/site/xingxingwei1988/" target="_blank">Prof. Xingxing Wei (韦星星)</a>. I am also a visiting Ph.D. student at <a href="https://ml.cs.tsinghua.edu.cn/" target="_blank">TSAIL, Tsinghua University</a>, jointly supervised by <a href="https://www.suhangss.me/" target="_blank">Prof. Hang Su (苏航)</a> and <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/" target="_blank">A/Prof. Yinpeng Dong (董胤蓬)</a>.</p>
-    <p>My research centers on <b>spatial intelligence for embodied agents</b> — building brain-inspired cognitive maps and structured spatial memory so that multimodal foundation models can perceive, remember, reason, and navigate in the 3D physical world (e.g., <a href="https://github.com/Heathcliff-saku/BSC-Nav" target="_blank">BSC-Nav</a>, World2Mind, AlloSpatial). A second line of my work studies the <b>trustworthiness and robustness of vision-language(-action) models</b> under real-world 3D variations, viewpoints, and illumination (ViewFool, VIAT, Omniview-Tuning, AdvDreamer).</p>
-    <p>I received my B.E. from Xidian University (XDU), where I was awarded the <strong>National Scholarship</strong> (2021) and named an <strong>Outstanding Graduate</strong> and <strong>Innovation Model (西电创新楷模)</strong>. I previously interned at Dell Technologies (2021) and RealAI (2022).</p>
+    <!-- BIO_START -->
+    <p>Hi! I am <strong>Shouwei Ruan (阮受炜)</strong>, a final-year Ph.D. student at the <a href="https://iai.buaa.edu.cn/" target="_blank">Institute of Artificial Intelligence, Beihang University (BUAA)</a>, and a member of the <a href="https://rose-vision.github.io/" target="_blank">ROSE Vision Lab</a> led by <a href="https://sites.google.com/site/xingxingwei1988/" target="_blank">Prof. Xingxing Wei (韦星星)</a>. Before that, I received my B.E. in Intelligent Science and Technology from <a href="https://en.xidian.edu.cn/" target="_blank">Xidian University (XDU)</a>.</p>
+    <p>I am passionate about bringing AI into the physical world — how machines <b>perceive</b>, <b>understand</b>, and <b>interact</b> with 3D space. My research therefore centers on <b>multimodal spatial intelligence</b> (viewpoint-invariant visual perception and spatial reasoning, e.g., <a href="https://arxiv.org/abs/2210.03895" target="_blank">ViewFool</a>, <a href="https://omniview-tuning.github.io/" target="_blank">Omniview-Tuning</a>, <a href="https://arxiv.org/abs/2603.09774" target="_blank">World2Mind</a>) and extends to <b>biologically-inspired embodied navigation, manipulation, and world modeling</b> (e.g., <a href="https://github.com/Heathcliff-saku/BSC-Nav" target="_blank">BSC-Nav</a>, <a href="https://arxiv.org/abs/2606.08952" target="_blank">AlloSpatial</a>). My long-term vision is <i>persistent intelligence</i>: agents that operate in the physical world over long horizons and keep refining their cognition through experience. Going forward, I will focus on <b>embodied intelligence and world-model-based policies</b>.</p>
+    <p>I am fortunate to be jointly supervised by <a href="https://www.suhangss.me/" target="_blank">Prof. Hang Su (苏航)</a> at <a href="https://ml.cs.tsinghua.edu.cn/" target="_blank">TSAIL, Tsinghua University</a>, and to have been mentored by <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/" target="_blank">Prof. Yinpeng Dong (董胤蓬)</a> in the early years of my Ph.D. I have also worked as a research intern at the Foundation Model Department of <a href="https://www.huawei.com/" target="_blank">Huawei 2012 Labs</a>, <a href="https://www.realai.ai/" target="_blank">RealAI (瑞莱智慧)</a>, and <a href="https://www.dell.com/" target="_blank">Dell Technologies</a>.</p>
+    <p>I enjoy taking on challenging research problems. Lately, though, I have been trying to slow down, think more deliberately, and leave room for a healthier work–life balance — my short-term goals are simply to restore a good sleep schedule and to build muscle (hopefully sticking to the gym three times a week 🏋️).</p>
     <p class="note">Feel free to reach out by email if you are interested in discussing or collaborating.</p>
     <!-- BIO_END -->
   </div>
@@ -301,7 +307,7 @@ footer .card{display:inline-block;padding:12px 22px}
   <div class="pubs">
 
     <div class="card pub first">
-      <div class="thumb"><img src="./files/work/bsc-nav/poster.jpg" alt=""></div>
+      <div class="thumb cover"><img src="./files/work/cover/bscnav.jpg" alt=""></div>
       <div>
         <p class="t">🔥 Brain-inspired Spatial Intelligence for Embodied Agents (BSC-Nav)</p>
         <div class="au"><u>Shouwei Ruan</u>, Liyuan Wang, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei<sup>†</sup>, Hang Su<sup>†</sup></div>
@@ -312,7 +318,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub first">
-      <div class="thumb"><div class="ph">ALLOSPATIAL<br>agentic harness</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/allospatial.jpg" alt=""></div>
       <div>
         <p class="t">AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models</p>
         <div class="au"><u>Shouwei Ruan</u>, Bin Wang, Zhenyu Wu, Qihui Zhu, Yuxiang Zhang, Jingzhi Li, Yubin Wang, Xingxing Wei</div>
@@ -323,7 +329,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub first">
-      <div class="thumb"><div class="ph">WORLD2MIND<br>cognition toolkit</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/world2mind.jpg" alt=""></div>
       <div>
         <p class="t">World2Mind: Cognition Toolkit for Allocentric Spatial Reasoning in Foundation Models</p>
         <div class="au"><u>Shouwei Ruan</u>, Bin Wang, Zhenyu Wu, Qihui Zhu, Yuxiang Zhang, Hang Su, Yubin Wang</div>
@@ -334,7 +340,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">MIND OVER SPACE<br>Video2Mental · NavMind</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/mindoverspace.jpg" alt=""></div>
       <div>
         <p class="t">Mind over Space: Can Multimodal Large Language Models Mentally Navigate?</p>
         <div class="au">Qihui Zhu, <u>Shouwei Ruan</u>, Xiao Yang, Hao Jiang, Yao Huang, Shiji Zhao, Hanwei Fan, Hang Su, Xingxing Wei<sup>†</sup></div>
@@ -345,7 +351,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">UniNDM<br>T2I safety</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/unindm.jpg" alt=""></div>
       <div>
         <p class="t">UniNDM: A Unified Noise-driven Detection and Mitigation Framework Against Sexual Content in Text-to-Image Generation</p>
         <div class="au">Yao Huang, Yitong Sun, Huanran Chen, Ruochen Zhang, <u>Shouwei Ruan</u>, Ranjie Duan, Maoxun Yuan, Yinpeng Dong, Hui Xue, Xiaochun Cao, Xingxing Wei<sup>†</sup></div>
@@ -355,7 +361,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">B-DPO<br>safety alignment</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/bdpo.jpg" alt=""></div>
       <div>
         <p class="t">Improving Safety Alignment via Balanced Direct Preference Optimization</p>
         <div class="au">Shiji Zhao, Mengyang Wang, Shukun Xiong, Fangzhou Chen, Qihui Zhu, <u>Shouwei Ruan</u>, Yisong Xiao, Ranjie Duan, Xun Chen, Xingxing Wei<sup>†</sup></div>
@@ -365,7 +371,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">WebRISE<br>MLLM web artifacts</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/webrise.jpg" alt=""></div>
       <div>
         <p class="t">WebRISE: Requirement-Induced State Evaluation for MLLM-Generated Web Artifacts</p>
         <div class="au">Yuxin Meng, Yuhan Suo, Junjie Wang, Yuhan Sun, Yiyao Yu, Ruixu Zhang, Ruining Hu, Yubin Wang, <u>Shouwei Ruan</u>, Bin Wang, Yuxiang Zhang, Yujiu Yang<sup>†</sup></div>
@@ -413,7 +419,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub first">
-      <div class="thumb"><div class="ph">LibraAlign-100K<br>T2I-SPO</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/libraalign.jpg" alt=""></div>
       <div>
         <p class="t">The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation</p>
         <div class="au"><u>Shouwei Ruan</u>, Zhenyu Wu, Yao Huang, Ruochen Zhang, Yitong Sun, Caixin Kang, Shiji Zhao, Xingxing Wei<sup>†</sup></div>
@@ -424,7 +430,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">Eva-VLA<br>VLA robustness</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/evavla.jpg" alt=""></div>
       <div>
         <p class="t">Eva-VLA: Evaluating Vision-Language-Action Models' Robustness Under Real-World Physical Variations</p>
         <div class="au">Hanqing Liu, <u>Shouwei Ruan</u>, Jiahuan Long, Junqi Wu, Jiacheng Hou, Huili Tang, Tingsong Jiang, Weien Zhou, Wen Yao<sup>†</sup></div>
@@ -435,7 +441,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">Manifold Steering<br>LRM overthinking</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/manifold.jpg" alt=""></div>
       <div>
         <p class="t">Mitigating Overthinking in Large Reasoning Models via Manifold Steering</p>
         <div class="au">Yao Huang, Huanran Chen, <u>Shouwei Ruan</u>, Yichi Zhang, Xingxing Wei, Yinpeng Dong<sup>†</sup></div>
@@ -446,7 +452,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">SI-Attack<br>MLLM jailbreak</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/siattack.jpg" alt=""></div>
       <div>
         <p class="t">Jailbreaking Multimodal Large Language Models via Shuffle Inconsistency</p>
         <div class="au">Shiji Zhao, Ranjie Duan, Fengxiang Wang, Chi Chen, Caixin Kang, <u>Shouwei Ruan</u>, Jialing Tao, YueFeng Chen, Hui Xue, Xingxing Wei<sup>†</sup></div>
@@ -456,7 +462,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">NDM<br>T2I safety</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/ndm.jpg" alt=""></div>
       <div>
         <p class="t">NDM: A Noise-driven Detection and Mitigation Framework against Implicit Sexual Intentions in Text-to-Image Generation</p>
         <div class="au">Yitong Sun, Yao Huang, Ruochen Zhang, Huanran Chen, <u>Shouwei Ruan</u>, Ranjie Duan, Xingxing Wei<sup>†</sup></div>
@@ -466,7 +472,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">Breaking the Ceiling<br>jailbreak strategy space</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/ceiling.jpg" alt=""></div>
       <div>
         <p class="t">Breaking the Ceiling: Exploring the Potential of Jailbreak Attacks through Expanding Strategy Space</p>
         <div class="au">Yao Huang, Yitong Sun, <u>Shouwei Ruan</u>, Yichi Zhang, Yinpeng Dong, Xingxing Wei<sup>†</sup></div>
@@ -476,7 +482,7 @@ footer .card{display:inline-block;padding:12px 22px}
     </div>
 
     <div class="card pub">
-      <div class="thumb"><div class="ph">MoAPT<br>adversarial prompt tuning</div></div>
+      <div class="thumb cover"><img src="./files/work/cover/moapt.jpg" alt=""></div>
       <div>
         <p class="t">MoAPT: Mixture of Adversarial Prompt Tuning for Vision-Language Models</p>
         <div class="au">Shiji Zhao, Qihui Zhu, Shukun Xiong, <u>Shouwei Ruan</u>, Maoxun Yuan, Jialing Tao, Jiexi Liu, Ranjie Duan, Jie Zhang, Jie Zhang, Xingxing Wei<sup>†</sup></div>
@@ -586,6 +592,12 @@ footer .card{display:inline-block;padding:12px 22px}
       <div><b>TSAIL Group, Tsinghua University (THU), Beijing, China</b>
         <div class="meta">Visiting Ph.D. Student. Supervised by Prof. Hang Su; closely working with <a href="https://scholar.google.com/citations?user=6urFg8kAAAAJ&hl=en" target="_blank">Songming Liu</a> and <a href="https://lywang3081.github.io/" target="_blank">Liyuan Wang</a>.</div>
         <div class="time">2023 – Present</div></div>
+    </div>
+    <div class="card row">
+      <div class="logo"><div style="font-weight:800;color:#c8102e;font-size:20px;letter-spacing:.02em">HUAWEI</div></div>
+      <div><b>Foundation Model Department, Huawei 2012 Laboratories (华为2012实验室 基础大模型部), China</b>
+        <div class="meta">Research Intern — multimodal foundation models &amp; spatial intelligence.</div>
+        <div class="time">2025 – 2026</div></div>
     </div>
     <div class="card row">
       <div class="logo"><img src="./files/institute/realai.png" alt="RealAI"></div>
